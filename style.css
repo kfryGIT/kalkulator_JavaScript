@@ -1,0 +1,71 @@
+
+
+body{
+    min-height: 100vh;
+    /* background-color: rgb(233, 15, 200); */
+    background-image: linear-gradient(to right, red , yellow);
+    display: flex;
+    /* Flex Box Layout – moduł zapewniający efektywniejszy i skuteczniejszy 
+    sposób na zarządzanie wyrównaniem, rozkładem elementów wewnątrz kontenerów  */
+    justify-content: center;
+    /* justify-content definiuje, w jaki sposób przeglądarka rozdziela przestrzeń pomiędzy elementami treści i wokół nich */
+    align-items: center;
+    /* align-items określa domyślne wyrównanie elementów znajdujących się w kontenerze Flexbox */
+}
+
+.calculator-heder{
+    height: 60vh;
+    min-width: 370px;
+    max-width: 370px;
+}
+.display{
+    width: 99%;
+    min-height: 25%;
+    max-height: 30%;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    word-break: break-all;
+    /* jak wpisujemy dużą liczbę to tekst schodzi na dół */
+    text-align: right;
+    /* text na prawo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 5px;
+    font-weight: bold;
+    /* szerokość obszaru dopełnienia po prawej stronie elementu.  */
+}
+
+/* .pierwszyNr{font-size: 35px;}
+.mathSing{font-size: 35px;}
+.curentNr{font-size: 35px;} */
+.mathSing{font-size: 35px;}
+
+
+.panel{
+    /* background-color: black;
+    color: aliceblue; */
+    height: 80%;
+    display: grid;
+    /* kontener grid */
+    grid-template-columns: repeat(4, 1fr);
+    /* powturz kolumny 4x jedna frakcja */
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    /* (odległośc 2px) */
+    /* box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1); */
+
+}
+
+/* .calculator-history{
+    height: 53vh;
+    margin: 20px;
+    width: 150px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+
+} */
+
+
+
